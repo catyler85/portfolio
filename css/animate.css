@@ -1,0 +1,33 @@
+.fader {
+    opacity: 0;
+    transition: opacity 2s ease-in;
+    will-change: opacity;
+}
+
+.fader.is-visible{
+   opacity: 1;
+}
+
+.stretch {
+    width: 0%;
+    opacity: 0;
+    transition: width 1s .25s cubic-bezier(0,1,.3,1), opacity 0.75s .25s ease-in;
+    will-change: width, opacity;
+}
+
+.stretch.is-visible{
+    width: 100%;
+    opacity: 1;
+}
+
+.blinds {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 2s .5s cubic-bezier(0,1,.3,1), opacity .5 .25;
+    will-change: max-height, opacity;
+}
+
+.blinds.is-visible{
+    max-height: 100vh;
+    opacity: 1;
+}

@@ -1,7 +1,8 @@
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min w3-mobile" id="home">
+  
   <div class="w3-display-topmiddle w3-text-white" style="padding:5%">
-    <span class="w3-jumbo w3-hide-small raleway">Lets create something new.</span><br>
+    <span class="w3-hide-small raleway" style="font-size:4vw;">Lets create something new.</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium raleway">Lets create something new.</span><br>
   </div>
   <div class="w3-display-bottommiddle w3-text-grey w3-large" style="padding:24px 48px">
@@ -13,7 +14,7 @@
 
 
 <!-- About Section-->
-<div class="w3-container" style="padding:128px 16px" id="about">
+<div class="w3-container" style="padding:128px 16px" id="about" ng-controller="portfolioCtrl">
   <h3 class="w3-center">About Me </h3>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l4 m6 w3-margin-bottom">
@@ -23,20 +24,20 @@
           <h3>Corey Tyler</h3>
           <span class="w3-opacity">Aspiring Web Developer</span>
           <p>Logical thinker with a touch of creativity.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <p><span class="w3-button w3-light-grey w3-block" ><a href="mailto:catyler85@gmail.com"><i class="fa fa-envelope"></i> Contact</a></span></p>
         </div>
       </div>
     </div>
     <div class="w3-col l8 m6 w3-margin-bottom">
         <h3 ng-hide="true">Skills.</h3>
         <p>I'm an ace when it comes to database development.
-          I have several years experience with PL/SQL and PGSQL.
+          With several years experience using PL/SQL and PGSQL,
           I can write complex SQL
           queries and fine tune them to run more efficiently. </p>
         <p>I've also begun to explore web development
            in my spare time.  My wife is a travel agent and
-           I've begun developing a guest database web app for her
-           to help keep her organized. Through designing a web app for her,
+           I've started developing a CRM web app for her
+           to help keep her organized. From this experience,
            I've discovered that I really enjoy web development.  </p>
         <p>I'm naturally curious and am always looking to expand my skill set.
          My Google News feed is filled with articles about coding techniques
@@ -44,20 +45,55 @@
          continually learn, I also have a creative side, both artistically
          and technically. Some times as a developer, you need to think
          outside the box to solve a problem.</p>
-          <p class="w3-wide"><i class="fa fa-database w3-margin-right"></i>Database</p>
-          <div class="w3-grey">
+          <p class="w3-wide w3-tooltip">
+            <i class="fa fa-database w3-margin-right"></i>Database
+            <span style="position:absolute;left:15;top:20px;border-radius: 10px 10px 0% 0%;"
+                  class="w3-text w3-tag w3-light-gray tooltip">
+                    Oracle PL/SQL</span>
+            <span style="position:absolute;left:15;top:42px;border-radius: 0% 0% 10px 10px;"
+                  class="w3-text w3-tag w3-light-gray tooltip">
+                    PostgreSQL</span>
+          </p>
+          <div class="w3-grey stretch show-on-scroll">
             <div class="w3-container w3-blue-grey w3-center" style="width:90%">90%</div>
           </div>
-          <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Back-end</p>
-          <div class="w3-grey">
+          <p class="w3-wide w3-tooltip">
+            <i class="fa fa-desktop w3-margin-right"></i>Back-end
+            <span style="position:absolute;left:15;top:20px;;border-radius: 10px 10px 0% 0%;"
+                  class="w3-text w3-tag w3-light-gray tooltip">
+                    PHP</span>
+            <span style="position:absolute;left:15;top:42px;border-radius: 0% 0% 10px 10px;"
+                  class="w3-text w3-tag w3-light-gray tooltip">
+                    Ruby On Rails</span></p>
+          <div class="w3-grey stretch show-on-scroll">
             <div class="w3-container w3-blue-grey w3-center" style="width:70%">70%</div>
           </div>
-          <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Front-end</p>
-          <div class="w3-grey">
-            <div class="w3-container w3-blue-grey w3-center" style="width:55%">55%</div>
+          <p class="w3-wide w3-tooltip">
+            <i class="fa fa-photo w3-margin-right"></i>Front-end
+            <span style="position:absolute;left:15;top:20px;border-radius: 10px 10px 0% 0%;"
+                  class="w3-text w3-tag w3-light-gray tooltip">
+                    JavaScript</span>
+            <span style="position:absolute;left:15;top:42px;"
+                  class="w3-text w3-tag w3-light-gray tooltip">
+                    AngularJS</span>
+            <span style="position:absolute;left:15;top:64px;" 
+                  class="w3-text w3-tag w3-light-gray tooltip">
+                    W3.css</span>
+            <span style="position:absolute;left:15;top:86px;border-radius: 0% 0% 10px 10px;"
+                  class="w3-text w3-tag w3-light-gray tooltip">
+                    Bootstrap</span></p>
+          <div class="w3-grey stretch show-on-scroll">
+            <div class="w3-container w3-blue-grey w3-center" style="width:60%">60%</div>
           </div>
-          <p class="w3-wide"><i class="fas fa-chart-line w3-margin-right"></i>Reporting</p>
-          <div class="w3-grey">
+          <p class="w3-wide w3-tooltip">
+            <i class="fas fa-chart-line w3-margin-right"></i>Reporting
+            <span style="position:absolute;left:15;top:20px;border-radius: 10px 10px 0% 0%;"
+                  class="w3-text w3-tag w3-light-gray tooltip">
+                    Tableau</span>
+            <span style="position:absolute;left:15;top:42px;border-radius: 0% 0% 10px 10px;"
+                  class="w3-text w3-tag w3-light-gray tooltip">
+                    Crystal Reports</span></p>
+          <div class="w3-grey stretch show-on-scroll">
             <div class="w3-container w3-blue-grey w3-center" style="width:75%">75%</div>
           </div>
     </div>
@@ -73,13 +109,13 @@
       <h4 class="w3-center">The Hibbert Group</h4>
       <div class="w3-third">
         <span class="w3-large w3-margin-left"><u>June 2016 - Present</u></span>
-        <ul class="w3-ul w3-white w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-margin-bottom blinds show-on-scroll">
           <li><h5>Database Developer</h5></li>
-          <li>Code using PL/SQL and PGSQL</li>
-          <li>Create database objects as needed</li>
-          <li>Troubleshoot issues</li>
-          <li>Write complex SQL queries</li>
-          <li>Create reporting using Tableau and Crystal Reports</li>
+          <li class="blinds show-on-scroll">Code using PL/SQL and PGSQL</li>
+          <li class="blinds show-on-scroll">Create database objects as needed</li>
+          <li class="blinds show-on-scroll">Troubleshoot issues</li>
+          <li class="blinds show-on-scroll">Write complex SQL queries</li>
+          <li class="blinds show-on-scroll">Create reporting using Tableau and Crystal Reports</li>
         </ul>
       </div>
       <div class="w3-third">
