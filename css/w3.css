@@ -236,3 +236,33 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     z-index: 1;
     box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+.open-sans-con {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.advent-pro{
+  font-family: 'Advent Pro', sans-serif;
+}
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/tianyi-ma-WiONHd_zYI4-cropped.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
